@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-sitemap-edgio-example",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "edgio:dev": "edgio dev",
+    "edgio:build": "npm run build && npm run generate && edgio build",
+    "edgio:deploy": "npm run build && npm run generate && edgio deploy"
+  },
+  "dependencies": {
+    "@nuxt/core": "^2.15.8"
+  },
+  "devDependencies": {
+    "@edgio/cli": "^6.1.2",
+    "@edgio/core": "^6.1.2",
+    "@edgio/devtools": "^6.1.2",
+    "@edgio/nuxt": "^6.1.2",
+    "@edgio/prefetch": "^6.1.2",
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  }
+}
