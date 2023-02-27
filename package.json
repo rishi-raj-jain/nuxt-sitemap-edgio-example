@@ -10,7 +10,8 @@
     "edgio:deploy": "npm run build && npm run generate && edgio deploy"
   },
   "dependencies": {
-    "@nuxt/core": "^2.15.8"
+    "@nuxt/core": "^2.15.8",
+    "@nuxtjs/sitemap": "^2.4.0"
   },
   "devDependencies": {
     "@edgio/cli": "^6.1.2",

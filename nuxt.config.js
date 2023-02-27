@@ -19,10 +19,25 @@ export default {
   generate: { fallback: true },
   components: true,
   buildModules: ["@edgio/nuxt/module"],
+  modules: ["@nuxtjs/sitemap"],
   // Nuxt GH Issue: https://github.com/nuxt/nuxt/issues/10751
   build: {
     extend(config) {
       config.resolve.alias["node-fetch-native"] = require.resolve("node-fetch");
     },
+  },
+  sitemap: {
+    hostname: "https://rishi.app",
+    gzip: true,
+    routes: [
+      "/page/1",
+      "/page/2",
+      {
+        url: "/page/3",
+        changefreq: "daily",
+        priority: 1,
+        lastmod: "2017-06-30T13:30:00.000Z",
+      },
+    ],
   },
 };
